@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Blog</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css" />
+    <link rel="stylesheet" href="assets/css/animated.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <style>
+      .detail_blog {
+        margin-top: 100px; /* Memberi jarak dari header */
+        animation: fadeInUp 0.75s ease-in-out;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+      <div class="preloader-inner">
+        <span class="dot"></span>
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header
+      class="header-area header-sticky wow slideInDown"
+      data-wow-duration="0.75s"
+      data-wow-delay="0s"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <h4>Cakrawala Mit<span>ra Sejahtera</span></h4>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="index.html">Beranda</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="index.html">Tentang Kami</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="index.html">Service</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="index.html">Testimoni</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="index.html" class="active">Blog</a>
+                </li>
+                <li class="scroll-to-section">
+                  <div class="main-red-button">
+                    <a href="index.html">Pesan Sekarang</a>
+                  </div>
+                </li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- section content -->
+    <div class="container pt-2 pb-4 mb-3 detail_blog">
+      <div class="row">
+        <div class="col-md-9 mt-4 mb-4">
+          <div
+            class="card p-4 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
+            <img id="cardDetailImg" class="align-self-center" />
+            <div class="blog-date d-flex text-center mt-3 align-self-center">
+              <i class="fa fa-calendar me-2 mt-1"></i>
+              <p id="tgl-blog">21 Maret 2024, 00:09 AM</p>
+            </div>
+            <div
+              id="author-detail"
+              class="d-flex justify-content-center align-items-center mt-2"
+            ></div>
+            <iframe
+              src="assets/content/blog-1.html"
+              id="cardDetailBlog"
+              class="w-100"
+            ></iframe>
+          </div>
+        </div>
+        <div class="col-md-3 mt-4 mb-4">
+          <div
+            class="form-group wow fadeInRight"
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
+          >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="search blog..."
+              autocomplete="off"
+              oninput="searchBlog(this)"
+            />
+            <div class="latest-post mt-3 mb-3">
+              <p class="text-latest-post">LATEST POST</p>
+            </div>
+            <div class="latest-blog-content" id="latestBlogContent"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section content -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 wow fadeIn"
+            data-wow-duration="1s"
+            data-wow-delay="0.25s"
+          >
+            <p>
+              © Copyright 2025 Cakrawala-Mitra-Sejahtera Co. All Rights
+              Reserved.
+
+              <br />Design:
+              <a rel="nofollow" href="https://alfathony19.github.io/MyFolio"
+                >Aldo Abdillah Fathony</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/detail-blog.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+  </body>
+</html>
